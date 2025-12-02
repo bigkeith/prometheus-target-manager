@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  prometheus-targets-app:
+    build: .
+    container_name: prometheus-targets-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - /tmp/targets.json:/app/files/targets.json:Z
+    restart: unless-stopped
