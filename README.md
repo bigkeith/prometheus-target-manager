@@ -1,4 +1,4 @@
-# prometheus-targets
+# prometheus-target-manager
 
 This project aims to trivialize manually adding host to the prometheus targets list. 
 while there are dynamic list with ansible they will pull more data than what is needed at this point. 
